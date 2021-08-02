@@ -1,37 +1,51 @@
 html, body {
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
     font-size: 18px;
-    background-color: hsl(185, 75%, 39%);
     font-family: 'Kumbh Sans', sans-serif;
+    background-color: hsl(185, 75%, 39%);
 }
 
 .container {
     display: flex;
     justify-content: center;
-    position: relative;
+    align-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
 }
+
 .bg-pattern-top {
-    top: -450px;
+    top: 0;
+    transform: translate(0, -50%);
     position: relative;
     z-index: 1;
-    
 }
+
 .bg-pattern-bottom {
     position: relative;
-    bottom: -350px;
+    bottom: 0;
+    transform: translate(0, +40%)
 }
-    
+
 .box {
     height: 21rem;
     width: 20rem;
     background-color: white;
-    margin-top: 10rem;
     border-radius: 1rem;
     position: absolute;
     z-index: 2;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
 }
 
 .image-container {
     position: relative;
+    align-items: center;
 }
 
 .background {
@@ -47,16 +61,19 @@ html, body {
     border-width: 0.4rem;
     position: absolute;
     z-index: 5;
-    left: 130px;
-    top: 100px;
+    left: 0;
+    top: 0;
+    transform: translate(+115%, +90%)
 }
 
 .info-container {
     margin-top: 2.5rem;
 }
+
 .main__info-container {
     text-align: center;
 }
+
 .main__info {
     display: flex;
     justify-content: center;
@@ -69,18 +86,20 @@ html, body {
     padding-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
+
 .main__info-age {
     color: hsl(227, 10%, 46%);
     padding-top: 0.5rem;
     margin-bottom: 0.5rem;
 }
+
 .main__info-city {
     color: hsl(227, 10%, 46%);
     margin-top: 0;
     font-size: 14px;
     margin-bottom: 1.5rem;
-    
 }
+
 .data-container {
     display: flex;
     justify-content: space-evenly;
@@ -99,8 +118,7 @@ html, body {
 }
 
 .line {
-    background-color:hsl(227, 10%, 46%);
+    background-color: hsl(227, 10%, 46%);
     opacity: 0.2;
     margin-bottom: 1rem;
 }
-
